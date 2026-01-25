@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "author": "Lakshmeesha M",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 106.2, "left": -0.6, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": 15.6, "left": 109.4, "attrs": { "color": "red" } },
+    { "type": "wokwi-ir-receiver", "id": "ir1", "top": -39.75, "left": 171.02, "attrs": {} },
+    { "type": "wokwi-ir-remote", "id": "remote1", "top": 38.4, "left": -182.4, "attrs": {} }
+  ],
+  "connections": [
+    [ "led1:A", "uno:10", "green", [ "v0", "h19.2" ] ],
+    [ "led1:C", "uno:GND.1", "green", [ "v0", "h-9.2" ] ],
+    [ "ir1:DAT", "uno:2", "green", [ "v0", "h28.8" ] ],
+    [ "ir1:GND", "uno:GND.3", "black", [ "v278.4", "h-9.6" ] ],
+    [ "ir1:VCC", "uno:5V", "red", [ "v278.4", "h-38.4" ] ]
+  ],
+  "dependencies": {}
+}
